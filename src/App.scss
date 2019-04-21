@@ -1,0 +1,68 @@
+$primary-color: lighten(#41a6c2, 2) !default;
+
+@import "../node_modules//materialize-css/sass/materialize.scss";
+/*** Nav ****/
+nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {
+  height: 107px;
+  line-height: 107px;
+}
+nav .brand-logo{
+  padding-top: 5px;
+}
+.page-footer{
+  padding-top: 0;
+}
+
+nav .waves-effect.btn {
+  color: $primary-color;
+}
+/**** Home ****/
+#Home{
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
+    background-color: #111;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    background-position:left bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('images/background-slider.png');
+    border-top: 0;
+    display: -ms-flexbox;
+    /* height: 35rem !important; */
+    min-height: 55rem;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+.home-welcome{
+  color: $primary-color;
+  margin-top: 0;
+}
+.home-icon{
+  border-radius: 50%;
+  background: $primary-color;
+  width: 200px;
+  height: 200px;
+  padding-top: 35px;
+  margin: 0 auto;
+}
+
+.home-caption{
+  font-size: 1.5rem;
+  line-height: 1.2;
+  font-weight: 500;
+  margin-top: 0;
+  color: #fff;
+}
