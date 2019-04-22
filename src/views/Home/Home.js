@@ -6,32 +6,32 @@ const Home = () => {
     return (
         <div id="Home">
             <div className="container">
-                <div className="row center-align">
-                    <h1 class="home-welcome">What’s up Doc?</h1>
+                <div className="row center-align home-welcome">
+                    <h1>What’s up Doc?</h1>
                     <p><strong>Medical information you can trust.</strong></p>
                 </div>
-                <div class="row">
-                    <div class="col s4 center">
+                <div className="row">
+                    <div className="col s12 m4 center home-icon-container">
                         <a href="">
-                            <div class="center home-icon">
+                            <div className="center home-icon hoverable">
                                 < img src={medicineIcon} />
-                                <p class="home-caption">Pharmacy Directory</p>
+                                <p className="home-caption">Pharmacy<br/>Directory</p>
                             </div>
                         </a>
                     </div>
-                    <div class="col s4">
+                    <div className="col s12 m4  home-icon-container">
                         <a href="">
-                            <div class="center home-icon">
+                            <div className="center home-icon hoverable">
                                 < img src={bookIcon} />
-                                <p class="home-caption">Pharmacy Directory</p>
+                                <p className="home-caption">General<br/>Health</p>
                             </div>
                         </a>
                     </div>
-                    <div class="col s4">
+                    <div className="col s12 m4 home-icon-container">
                         <a href="">
-                            <div class="center home-icon">
+                            <div className="center home-icon hoverable ">
                                 < img src={directoryIcon} />
-                                <p class="home-caption">Pharmacy Directory</p>
+                                <p className="home-caption">Physician<br/>Directory</p>
                             </div>
                         </a>
                     </div>
