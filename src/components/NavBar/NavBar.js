@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from '../../images/panda-logo.png';
+import 'materialize-css';
 import  SignupModal  from './SignupModal';
+import  LoginModal  from './LoginModal';
 const NavBar = () => {
    
     return (
@@ -10,8 +12,9 @@ const NavBar = () => {
                     <a href="/" className="brand-logo "><img className="responsive-img" src={logo} alt=""/></a>
                     <ul id="nav-mobile" className="right hide-on-med-and-down">
                         <li><a href="/home"><i className="material-icons right">home</i></a></li>
+                        <li><a href="/about">About</a></li>
                         <li><a href="/contact">Contact</a></li>
-                        <li><a href="/signin">Sign in</a></li>
+                        <li><LoginModal/></li>
                         <li>
                            <SignupModal />
                         </li>

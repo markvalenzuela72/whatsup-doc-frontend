@@ -76,3 +76,19 @@ nav .waves-effect.btn {
 }
 
 /*** MODAL ***/
+.modal{
+  max-width: 600px; 
+  min-height: 630px;
+  .row {
+    margin-bottom: 10px;
+  }
+  .col.s12 > .btn {
+    width: 100%;
+  }
+  &.login-modal{
+    .forgot-password{
+      margin-bottom: 50px;
+    }
+  }
+}
+
