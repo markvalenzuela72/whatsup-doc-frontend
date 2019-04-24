@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from '../../images/panda-logo.png';
-import  {SignupModal}  from './SignupModal';
+import  SignupModal  from './SignupModal';
 const NavBar = () => {
    
     return (
