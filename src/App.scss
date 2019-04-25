@@ -1,6 +1,11 @@
 $primary-color: lighten(#41a6c2, 2) !default;
+$secondary-color: lighten(#41a6c2, 3) !default;
 
 @import "../node_modules//materialize-css/sass/materialize.scss";
+/*** Global ***/
+input:not([type]):focus:not([readonly]), input[type="text"]:not(.browser-default):focus:not([readonly]), input[type="password"]:not(.browser-default):focus:not([readonly]), input[type="email"]:not(.browser-default):focus:not([readonly]), input[type="url"]:not(.browser-default):focus:not([readonly]), input[type="time"]:not(.browser-default):focus:not([readonly]), input[type="date"]:not(.browser-default):focus:not([readonly]), input[type="datetime"]:not(.browser-default):focus:not([readonly]), input[type="datetime-local"]:not(.browser-default):focus:not([readonly]), input[type="tel"]:not(.browser-default):focus:not([readonly]), input[type="number"]:not(.browser-default):focus:not([readonly]), input[type="search"]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid $primary-color;
+}
 /*** Nav ****/
 nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {
   height: 107px;

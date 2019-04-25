@@ -1,14 +1,16 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const Footer = () => {
-    return (
-        <footer class="page-footer">
-            <div class="footer-copyright">
-                <div class="container center">
-                Copyright © 2019 White Pandas
+class Footer extends Component {
+    render() {
+        return (
+            <footer className="page-footer">
+                <div className="footer-copyright">
+                    <div className="container center">
+                        Copyright © 2019 White Pandas
                 </div>
-            </div>
-        </footer>
-    )
+                </div>
+            </footer>
+        )
+    }
 }
 export default Footer;

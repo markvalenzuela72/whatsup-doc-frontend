@@ -35,6 +35,17 @@ class SignupModal extends Component {
     const signupTrigger = <Link to="/" className="waves-effect waves-light btn white hoverable">Create Account</Link>
     return (
       <Modal className="signup-modal" fixedFooter header="Sign Up" trigger={signupTrigger}>
+        {this.state.error ?
+          <div class="row">
+            <div class="col s12">
+              <div class="card red darken-1 z-depth-3">
+                <div class="card-content white-text">
+                  <p> {this.state.error}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          : null}
         {this.state.isregister ? <Redirect to="/success/" /> : null}
         <div className="row">
           <form onSubmit={this.submitForm} className="col s12">
@@ -45,10 +56,10 @@ class SignupModal extends Component {
               <TextInput name="last_name" s={12} onChange={this.updateVal} label="Last Name" />
             </div>
             <div className="row">
-              <TextInput name="email" s={12} onChange={this.updateVal} label="Email" email validate />
+              <TextInput name="email" id="signup-email" s={12} onChange={this.updateVal} label="Email" email validate />
             </div>
             <div className="row">
-              <TextInput name="password" s={12} onChange={this.updateVal} password label="Password" />
+              <TextInput name="password" id="signup-password" s={12} onChange={this.updateVal} password label="Password" />
             </div>
             <div className="row">
               <TextInput name="Confirmpassword" s={12} id="confirmPassword" onChange={this.updateVal} password label="Confirm Password" />
@@ -62,9 +73,9 @@ class SignupModal extends Component {
             </div>
           </form>
         </div>
-     
+
       </Modal>
-     
+
     )
   }
 }
