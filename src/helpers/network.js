@@ -14,6 +14,7 @@ function loginRequest({email, password}){
       })
     }).then(response => {
       response.json().then(json => {
+        // console.log(JSON.stringify(json))
         if (!response.ok){
           return reject(json);
         }

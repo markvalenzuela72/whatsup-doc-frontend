@@ -6,6 +6,7 @@ function userLogout(){
   localStorage.removeItem("name");
 }
 function saveUser({token, name}){
+  console.log(name)
   localStorage.setItem("token", token);
   localStorage.setItem("name", name);
 }
@@ -16,7 +17,9 @@ function getToken(){
 }
 function userInfo(){
   if (localStorage.getItem("name") !== null){
+    console.log(localStorage.getItem("name"))
     return {
+      
       full_name: localStorage.getItem("name")
     }
   }
