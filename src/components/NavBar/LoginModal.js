@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-// import { Link } from 'react-router-dom';
 import { Modal, TextInput, Button } from 'react-materialize';
 import { loginRequest } from '../../helpers/network';
 import { saveUser, isRegistered } from '../../helpers/authentication';
+import M from 'materialize-css';
 class LoginModal extends Component {
     state = {
         error: null,
@@ -26,6 +26,11 @@ class LoginModal extends Component {
                 error: e.email
             })
         }
+    }
+    openRegister = () =>{
+        const elem = document.querySelector('.signup-modal')
+        const instance = M.Modal.getInstance(elem);
+        return instance.open();
     }
 
     render() {
@@ -64,7 +69,7 @@ class LoginModal extends Component {
                                 <Link to="/">Forgot Password?</Link>
                             </div>
                         </div>
-                        {!isRegistered ?
+                        {!isRegistered() ?
                             <div>
                                 <div className="row">
                                     <div className="col s12 center-align">
@@ -73,7 +78,7 @@ class LoginModal extends Component {
                                 </div>
                                 <div className="row">
                                     <div className="col s12">
-                                        <Button type="submit" waves="light" className="btn-large">
+                                        <Button onClick={this.openRegister} waves="light" className="btn-large">
                                             Register
                             </Button>
                                     </div>

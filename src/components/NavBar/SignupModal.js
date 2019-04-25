@@ -35,7 +35,9 @@ class SignupModal extends Component {
       })
     }
   }
+  
   render() {
+
     const signupTrigger = <Link to="/" className="waves-effect waves-light btn white hoverable">Create Account</Link>
     return (
       <Modal className="signup-modal" fixedFooter header="Sign Up" trigger={signupTrigger}>

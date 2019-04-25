@@ -40,6 +40,10 @@ nav .dropdown-content {
   z-index: 1;
   will-change: width, height;
 }
+
+.dropdown-content.collection .collection-item:last-child {
+  border: 1px solid #e0e0e0;
+}
 /**** Home ****/
 #Home{
     -ms-flex-align: center;

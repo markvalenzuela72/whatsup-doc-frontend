@@ -2,11 +2,12 @@ function isLoggedIn(){
   return localStorage.getItem("token") !== null & localStorage.getItem("token") !== 'undefined';
 }
 function isRegistered(){
-  return localStorage.getItem("userId") !== null;
+  return localStorage.getItem("userId") !== null & localStorage.getItem("userId") !== 'undefined';
 }
 function userLogout(){
   localStorage.removeItem("token");
   localStorage.removeItem("name");
+  localStorage.removeItem("userId");
 }
 function saveUser({token, name, _id}){
   console.log(_id)
