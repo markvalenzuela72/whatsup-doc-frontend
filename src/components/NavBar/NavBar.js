@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import logo from '../../images/panda-logo.png';
 import 'materialize-css';
 import SignupModal from './SignupModal';
@@ -15,16 +15,16 @@ class NavBar extends Component {
         const LoginNav = () => {
             if(isLoggedIn()) {
                 return <ul id="nav-mobile" className="right hide-on-med-and-down" >
-                    <li><a href="/home"><i className="material-icons right">home</i></a></li>
-                    <li><a href="/about">About</a></li>
-                    <li><a href="/contact">Contact</a></li>
-                    <li><NavLink to="/" onClick={this.logout} className="waves-effect waves-light btn red white hoverable">Logout</NavLink></li>
+                    <li><Link to="/home"><i className="material-icons right">home</i></Link></li>
+                    <li><Link to="/about">About</Link></li>
+                    <li><Link to="/contact">Contact</Link></li>
+                    <li><Link to="/" onClick={this.logout} className="waves-effect waves-light btn red white hoverable">Logout</Link></li>
                 </ul >
             } else {
                 return <ul id="nav-mobile" className="right hide-on-med-and-down" >
-                    <li><a href="/home"><i className="material-icons right">home</i></a></li>
-                    <li><a href="/about">About</a></li>
-                    <li><a href="/contact">Contact</a></li>
+                    <li><Link to="/home"><i className="material-icons right">home</i></Link></li>
+                    <li><Link to="/about">About</Link></li>
+                    <li><Link to="/contact">Contact</Link></li>
                     <li><LoginModal /></li>
                     <li><SignupModal /></li>
                 </ul>
