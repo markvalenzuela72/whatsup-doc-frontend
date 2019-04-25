@@ -29,12 +29,12 @@ class NavBar extends Component {
                     <li><Link to="/about">About</Link></li>
                     <li><Link to="/contact">Contact</Link></li>
                     <Dropdown options={dropdownOption} trigger={myAccountDropDown} className="collection">
-                        <div class="collection-item avatar">
+                        <a class="collection-item avatar">
                             <img src="http://materializecss.com/images/yuna.jpg" alt="" class="circle" />
                             <span class="title">Sign in as</span>
                             <p>{full_name}</p>
-                        </div>
-                        <Divider />
+                        </a>
+                        <Divider/>
                         <a onClick={this.logout}>Logout</a>
                     </Dropdown>
                 </ul >
