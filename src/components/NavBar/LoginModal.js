@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Redirect, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 // import { Link } from 'react-router-dom';
 import { Modal, TextInput, Button } from 'react-materialize';
 import { loginRequest } from '../../helpers/network';
@@ -14,22 +14,22 @@ class LoginModal extends Component {
     }
     submitForm = async (e) => {
         e.preventDefault();
-        this.setState({
-            error: null
-        })
         try {
             let response = await loginRequest({ email: this.state.email, password: this.state.password });
             saveUser(response);
             this.setState({
                 loggedin: true
             })
+            window.location.href = "/";
         } catch (e) {
             this.setState({
                 error: e.email
             })
         }
     }
+
     render() {
+
         const loginTrigger = <Link to="/">Sign in</Link>
         return (
             <Modal className="login-modal" fixedFooter header="Sign In" trigger={loginTrigger}>
@@ -44,9 +44,8 @@ class LoginModal extends Component {
                         </div>
                     </div>
                     : null}
-                {this.state.loggedin ? <Redirect to="/success/" /> : null}
                 <div className="row">
-                    <form onSubmit={this.submitForm} className="col s12">
+                    <form onSubmit={this.submitForm.bind(this)} className="col s12">
                         <div className="row">
                             <TextInput id="login-email" name="email" s={12} onChange={this.updateVal} label="Email" email validate />
                         </div>

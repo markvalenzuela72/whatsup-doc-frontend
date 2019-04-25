@@ -19,10 +19,10 @@ class NavBar extends Component {
                     coverTrigger: false,
                     alignment: 'right' // Displays dropdown with edge aligned to the left of button
                 }
-                
+
                 const myAccountDropDown = <li><Link to="">My Account<i class="material-icons right">arrow_drop_down</i></Link></li>
 
-                const full_name =  userInfo().full_name;
+                const full_name = userInfo().full_name;
 
                 return <ul id="nav-mobile" className="right hide-on-med-and-down" >
                     <li><Link to="/home"><i className="material-icons right">home</i></Link></li>
@@ -37,8 +37,6 @@ class NavBar extends Component {
                         <Divider />
                         <a onClick={this.logout}>Logout</a>
                     </Dropdown>
-                    {/* <li><Link className="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></Link></li> */}
-                    {/* <li><Link to="/" onClick={this.logout} className="waves-effect waves-light btn red white hoverable">Logout</Link></li> */}
                 </ul >
             } else {
                 return <ul id="nav-mobile" className="right hide-on-med-and-down" >

@@ -35,6 +35,7 @@ class SignupModal extends Component {
     const signupTrigger = <Link to="/" className="waves-effect waves-light btn white hoverable">Create Account</Link>
     return (
       <Modal className="signup-modal" fixedFooter header="Sign Up" trigger={signupTrigger}>
+        {this.state.isregister ? <Redirect to="/" /> : null}
         {this.state.error ?
           <div class="row">
             <div class="col s12">
@@ -46,7 +47,6 @@ class SignupModal extends Component {
             </div>
           </div>
           : null}
-        {this.state.isregister ? <Redirect to="/success/" /> : null}
         <div className="row">
           <form onSubmit={this.submitForm} className="col s12">
             <div className="row">
