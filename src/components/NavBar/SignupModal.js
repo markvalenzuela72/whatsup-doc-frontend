@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import { Redirect, Link } from 'react-router-dom';
+import {Link } from 'react-router-dom';
 import { Modal, TextInput, Button } from 'react-materialize';
 import { registerRequest } from '../../helpers/network';
 import { saveUser } from '../../helpers/authentication';
+import M from 'materialize-css';
 
 class SignupModal extends Component {
   state = {
     error: null,
-    loggedin: null,
     isregister: null
   }
   updateVal = (e) => {
@@ -18,13 +18,17 @@ class SignupModal extends Component {
     this.setState({
       error: null
     })
+      
     try {
       let response = await registerRequest({ firstname: this.state.first_name, lastname: this.state.last_name, email: this.state.email, password: this.state.password });
+      console.log(response);
       saveUser(response);
       this.setState({
-        loggedin: true,
         isregister: true
       })
+      const elem = document.querySelector('.login-modal')
+      const instance = M.Modal.getInstance(elem);
+      return instance.open();
     } catch (e) {
       this.setState({
         error: e.email
@@ -35,7 +39,6 @@ class SignupModal extends Component {
     const signupTrigger = <Link to="/" className="waves-effect waves-light btn white hoverable">Create Account</Link>
     return (
       <Modal className="signup-modal" fixedFooter header="Sign Up" trigger={signupTrigger}>
-        {this.state.isregister ? <Redirect to="/" /> : null}
         {this.state.error ?
           <div class="row">
             <div class="col s12">

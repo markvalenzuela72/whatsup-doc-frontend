@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 // import { Link } from 'react-router-dom';
 import { Modal, TextInput, Button } from 'react-materialize';
 import { loginRequest } from '../../helpers/network';
-import { saveUser } from '../../helpers/authentication';
+import { saveUser, isRegistered } from '../../helpers/authentication';
 class LoginModal extends Component {
     state = {
         error: null,
@@ -64,18 +64,22 @@ class LoginModal extends Component {
                                 <Link to="/">Forgot Password?</Link>
                             </div>
                         </div>
-                        <div className="row">
-                            <div className="col s12 center-align">
-                                Not a member yet?
+                        {!isRegistered ?
+                            <div>
+                                <div className="row">
+                                    <div className="col s12 center-align">
+                                        Not a member yet?
                             </div>
-                        </div>
-                        <div className="row">
-                            <div className="col s12">
-                                <Button type="submit" waves="light" className="btn-large">
-                                    Register
+                                </div>
+                                <div className="row">
+                                    <div className="col s12">
+                                        <Button type="submit" waves="light" className="btn-large">
+                                            Register
                             </Button>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                            : null}
                     </form>
                 </div>
             </Modal>

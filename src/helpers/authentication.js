@@ -1,13 +1,18 @@
 function isLoggedIn(){
-  return localStorage.getItem("token") !== null;
+  return localStorage.getItem("token") !== null & localStorage.getItem("token") !== 'undefined';
+}
+function isRegistered(){
+  return localStorage.getItem("userId") !== null;
 }
 function userLogout(){
   localStorage.removeItem("token");
   localStorage.removeItem("name");
 }
-function saveUser({token, name}){
+function saveUser({token, name, _id}){
+  console.log(_id)
   localStorage.setItem("token", token);
   localStorage.setItem("name", name);
+  localStorage.setItem("userId", _id);
 }
 function getToken(){
   if (isLoggedIn()){
@@ -25,6 +30,7 @@ function userInfo(){
 }
 export {
   isLoggedIn,
+  isRegistered,
   saveUser,
   userInfo,
   userLogout,
