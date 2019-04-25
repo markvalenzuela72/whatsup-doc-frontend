@@ -20,7 +20,7 @@ class NavBar extends Component {
                     alignment: 'right' // Displays dropdown with edge aligned to the left of button
                 }
 
-                const myAccountDropDown = <li><Link to="">My Account<i class="material-icons right">arrow_drop_down</i></Link></li>
+                const myAccountDropDown = <li><Link to="">My Account<i className="material-icons right">arrow_drop_down</i></Link></li>
 
                 const full_name = userInfo().full_name;
 
@@ -29,13 +29,13 @@ class NavBar extends Component {
                     <li><Link to="/about">About</Link></li>
                     <li><Link to="/contact">Contact</Link></li>
                     <Dropdown options={dropdownOption} trigger={myAccountDropDown} className="collection">
-                        <a class="collection-item avatar">
-                            <img src="http://materializecss.com/images/yuna.jpg" alt="" class="circle" />
-                            <span class="title">Sign in as</span>
+                        <Link to="/" className="collection-item avatar">
+                            <img src="http://materializecss.com/images/yuna.jpg" alt="" className="circle" />
+                            <span className="title">Sign in as</span>
                             <p>{full_name}</p>
-                        </a>
+                        </Link>
                         <Divider/>
-                        <a onClick={this.logout}>Logout</a>
+                        <Link to="/" onClick={this.logout}>Logout</Link>
                     </Dropdown>
                 </ul >
             } else {
