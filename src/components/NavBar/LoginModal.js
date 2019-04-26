@@ -20,7 +20,7 @@ class LoginModal extends Component {
             this.setState({
                 loggedin: true
             })
-            window.location.href = "/";
+            window.location.href = "/dashboard";
         } catch (e) {
             this.setState({
                 error: e.email

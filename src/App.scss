@@ -18,6 +18,18 @@ nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {
 nav .brand-logo{
   padding-top: 5px;
 }
+
+@media (max-width: 419px){
+  nav .brand-logo{
+    width: 100px;
+    height: 100px;
+  }
+
+  #Home{
+    overflow: hidden;
+  }
+}
+
 .page-footer{
   padding-top: 0;
 }
@@ -68,11 +80,14 @@ nav .dropdown-content {
     border-top: 0;
     display: -ms-flexbox;
     /* height: 35rem !important; */
-    min-height: 55rem;
+    // min-height: 55rem;
+    height: 80vh; 
     overflow: hidden;
     position: relative;
     text-align: center;
     width: 100%;
+    min-width: 479px;
+    
 }
 .home-welcome h1{
   color: $primary-color;
@@ -86,6 +101,7 @@ nav .dropdown-content {
 .col.home-icon-container{
   padding-bottom: 15px;
 }
+
 .home-icon{
   border-radius: 50%;
   background: $primary-color;

@@ -1,0 +1,56 @@
+
+#dash-menu {
+  background: #ddd;
+  color: #333;
+  
+}
+
+#dash-menu li{
+  display: flex;
+  /* justify-content: center; */
+  vertical-align: middle;
+  font-size: 1.2rem;
+  margin-left: 1.2rem;
+}
+
+#dash-menu a{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#dash-menu a:hover {
+  color: white;
+  
+}
+
+#dash-info {
+  border: 1px solid grey;
+  display: block;
+  padding-left: 0;
+  padding-right: 0;
+  border-radius: 5px;
+}
+
+.profile_img img{
+  border-radius: 50%;
+}
+
+#dash-title h2{
+  font-size: 2rem;
+  text-align: center;
+  color: #41A6C2;
+}
+
+#dash-title {
+  border-bottom: 1px solid grey;
+}
+
+#dash-details{
+  border: solid 1px grey;
+}
+
+#appointment-title h2{
+  font-size: 2rem;
+  color: #41A6C2;
+}
+
