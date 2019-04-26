@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 // import medicineIcon from '../../images/medicine.png';
 // import bookIcon from '../../images/book.png';
 // import directoryIcon from '../../images/location.png';
