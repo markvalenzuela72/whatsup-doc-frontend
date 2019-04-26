@@ -49,7 +49,7 @@ class LoginModal extends Component {
                         </div>
                     </div>
                     : null}
-                <div className="row">
+                  <div className="col-md-12">
                     <form onSubmit={this.submitForm.bind(this)} className="col s12">
                         <div className="row">
                             <TextInput id="login-email" name="email" s={12} onChange={this.updateVal} label="Email" email validate />

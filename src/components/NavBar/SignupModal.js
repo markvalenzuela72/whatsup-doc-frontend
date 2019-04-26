@@ -52,8 +52,8 @@ class SignupModal extends Component {
             </div>
           </div>
           : null}
-        <div className="row">
-          <form onSubmit={this.submitForm} className="col s12">
+        <div className="col-md-12">
+          <form onSubmit={this.submitForm} className="">
             <div className="row">
               <TextInput name="first_name" s={12} type="text" onChange={this.updateVal} label="First Name" />
             </div>
