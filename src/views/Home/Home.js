@@ -1,44 +1,30 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import medicineIcon from '../../images/medicine.png';
-import bookIcon from '../../images/book.png';
-import directoryIcon from '../../images/location.png';
+// import medicineIcon from '../../images/medicine.png';
+// import bookIcon from '../../images/book.png';
+// import directoryIcon from '../../images/location.png';
+
+import pharmacydir from '../../images/pharmacydir.jpg';
+import generalhealth from '../../images/generalhealth.jpg';
+import physiciandir from '../../images/physiciandir.jpg';
+
+
 class Home extends Component {
     render() {
         return (
             <div id="Home" >
-                <div className="container">
-                    <div className="row center-align home-welcome">
-                        <h1>What’s up Doc?</h1>
-                        <p><strong>Medical information you can trust.</strong></p>
-                    </div>
-                    <div className="row">
-                        <div className="col s12 m4 center home-icon-container">
-                            <Link to="/">
-                                <div className="center home-icon hoverable">
-                                    < img src={medicineIcon} alt="" />
-                                    <p className="home-caption">Pharmacy<br />Directory</p>
-                                </div>
-                            </Link>
-                        </div>
-                        <div className="col s12 m4  home-icon-container">
-                            <Link to="/">
-                                <div className="center home-icon hoverable">
-                                    < img src={bookIcon} alt="" />
-                                    <p className="home-caption">General<br />Health</p>
-                                </div>
-                            </Link>
-                        </div>
-                        <div className="col s12 m4 home-icon-container">
-                            <Link to="/">
-                                <div className="center home-icon hoverable ">
-                                    < img src={directoryIcon} alt="" />
-                                    <p className="home-caption">Physician<br />Directory</p>
-                                </div>
-                            </Link>
-                        </div>
-                    </div>
-                </div>
+
+        <div className="mx-auto text-center mt-5 pt-5">
+            <h1 className="mx-auto my-0" id="headertext">What's Up, Doc?</h1>
+            <h2 className="mx-auto mt-2 mb-5 text-secondary" id="subheadertext">Medical information you can trust.</h2>
+
+        <div id="homeMenu">
+        <a className="homeOptions" href="#"><img src=         {pharmacydir} alt="pharmacy-dictionary" /> </a> 
+            <a className="homeOptions" href="#"><img src={generalhealth} alt="general-health" /></a>
+            <a className="homeOptions" href="#"><img src={physiciandir} alt="physician-directory" /></a>
+        </div>
+        </div>
+
             </div>
         )
     }
