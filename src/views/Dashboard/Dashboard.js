@@ -15,7 +15,7 @@ const Dashboard = () => {
             <h2> Dashboard </h2>
           </div>
           <div className="profile_img d-flex justify-content-center mt-3">
-            <img src={profile} width="100px" height="100px" />
+            <img src={profile} alt="" width="100px" height="100px" />
           </div>
           <div className="mt-2 d-flex justify-content-center" id="dash-name">
             <p> {full_name} </p>
@@ -52,7 +52,7 @@ const Dashboard = () => {
               <h2> Appointments </h2>
             </div>
             <div className="card w-50" id="appointment1">
-              <img className="card-img-top" src={appoinment_img} alt="Card image cap" height="150px" />
+              <img className="card-img-top" src={appoinment_img} alt="" height="150px" />
               <ul class="list-group list-group-flush">
                 <li class="list-group-item">Thursday, March 21, 2019</li>
                 <li class="list-group-item"> <i class="far fa-user-circle"></i>  Dr. John Doe</li>
