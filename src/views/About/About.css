@@ -1,0 +1,12 @@
+#aboutsection {  
+    color:black;
+    height: 83vh;
+}
+
+#aboutsection .row {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+

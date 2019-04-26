@@ -35,7 +35,7 @@ class NavBar extends Component {
                 return <ul className="right hide-on-med-and-down">
                     <li><NavLink to="/home"><i className="material-icons right">home</i></NavLink></li>
                     <li><NavLink to="/about">About</NavLink></li>
-                    <li><NavLink to="/contact">Contact</NavLink></li>
+                    <li><NavLink to="/contactus">Contact Us</NavLink></li>
                     <Dropdown options={dropdownOption} trigger={myAccountDropDown} className="collection">
                         <div className="collection-item avatar">
                             <img src="http://materializecss.com/images/yuna.jpg" alt="" className="circle" />
@@ -49,7 +49,7 @@ class NavBar extends Component {
                 return <ul className="right hide-on-med-and-down">
                     <li><NavLink to="/home"><i className="material-icons right">home</i></NavLink></li>
                     <li><NavLink to="/about">About</NavLink></li>
-                    <li><NavLink to="/contact">Contact</NavLink></li>
+                    <li><NavLink to="/contactus">Contact Us</NavLink></li>
                     <li><LoginModal /></li>
                     <li><SignupModal /></li>
                 </ul>
@@ -61,7 +61,7 @@ class NavBar extends Component {
                 return <ul className="sidenav" id="wdmob-nav">
                     <li><NavLink to="/home">Home</NavLink></li>
                     <li><NavLink to="/about">About</NavLink></li>
-                    <li><NavLink to="/contact">Contact</NavLink></li>
+                    <li><NavLink to="/contactus">Contact Us</NavLink></li>
                     <Dropdown options={dropdownOption} trigger={myAccountDropDown} className="collection">
                         <div className="collection-item avatar">
                             <img src="http://materializecss.com/images/yuna.jpg" alt="" className="circle" />
@@ -75,7 +75,7 @@ class NavBar extends Component {
                 return <ul className="sidenav" id="wdmob-nav">
                 <li><NavLink to="/home">Home</NavLink></li>
                 <li><NavLink to="/about">About</NavLink></li>
-                <li><NavLink to="/contact">Contact</NavLink></li>
+                <li><NavLink to="/contactus">Contact Us</NavLink></li>
                 <li><LoginModal /></li>
                 <li><SignupModal /></li>
             </ul>

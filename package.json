@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+<<<<<<< HEAD
+=======
+    "axios": "^0.18.0",
+>>>>>>> ea689ac6ff3648f661d28afaf999100b456965be
     "bootstrap": "^4.3.1",
     "install": "^0.12.2",
     "materialize-css": "^1.0.0-rc.2",
