@@ -60,7 +60,7 @@ const DashboardContainer = (props) => {
           </ul>
         </div>
       </div>
-      <div className="col-md-8 mt-3" id="dash-details">
+      <div className="col-md-7 mt-3" id="dash-details">
         <div id="appointment-title">
           <h2> Appointments </h2>
         </div>
