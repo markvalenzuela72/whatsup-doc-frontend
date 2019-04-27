@@ -23,24 +23,24 @@ const Dashboard = () => {
           <div className="mt-3" id="dash-menu">
             <ul>
               <li id="profile-menu">
-                <Link to="/Profile"> <span> <i class="far fa-user-circle"></i> </span> Profile </Link> 
+                <Link to="/"> <span> <i class="far fa-user-circle"></i> </span> Profile </Link> 
               </li>
               <li id="genhealth-menu">
-              <Link to="/Dashboard"><span> <i class="fas fa-book"></i> </span> General Health
+              <Link to="/"><span> <i class="fas fa-book"></i> </span> General Health
               </Link>
               </li>
               <li id="physdir-menu">
-              <Link to="/Dashboard">
+              <Link to="/">
               <span> <i class="fas fa-map-marker-alt"></i> </span>  Physician Directory
               </Link>
               </li>
               <li id="transhist-menu">
-              <Link to="/Dashboard">
+              <Link to="/">
               <span> <i class="fas fa-history"></i> </span>   Transaction History
               </Link>
               </li>
               <li id="accountsetting-menu">
-              <Link to="/Dashboard">
+              <Link to="/">
               <span> <i class="fas fa-cog"></i> </span> Account Setting
               </Link>
               </li>
