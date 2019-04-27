@@ -12,9 +12,10 @@ import physiciandir from '../../images/physiciandir.jpg';
 class Home extends Component {
     render() {
         return (
-            <div id="Home" >
+            <div className="bkgimg">
+        <div id="Home" >
 
-        <div className="mx-auto text-center mt-5 pt-5">
+        <div className="mx-auto text-center mt-4 pt-5">
             <h1 className="mx-auto my-0" id="headertext">What's Up, Doc?</h1>
             <h2 className="mx-auto mt-2 mb-5 text-secondary" id="subheadertext">Medical information you can trust.</h2>
 
@@ -24,8 +25,8 @@ class Home extends Component {
             <a className="homeOptions" href><img src={physiciandir} alt="physician-directory" /></a>
         </div>
         </div>
-
-            </div>
+        </div>
+        </div>
         )
     }
 };

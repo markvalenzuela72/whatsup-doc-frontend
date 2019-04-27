@@ -16,10 +16,10 @@ class About extends Component {
                         <div className="col-md-6 mx-auto">
                         <h1 className="text-uppercase">About Us</h1>
                         <p>
-                            Whatsup Doc is UAE’s first telehealth service. Our network offers highly experience license physician from the best hospitals and clinics nationwide.
+                            Whatsup Doc is UAE’s first telehealth service. Our network offers highly experienced licensed physicians from the best hospitals and clinics nationwide.
                         </p>
                         <h2>History</h2>
-                        <p> The company was formed in 2019 as part Astrolabs Coding Bootcamp by the group members of White Panda</p>
+                        <p> The company was formed in 2019 as the best part of Astrolabs Coding Bootcamp by the group members of White Panda</p>
                         </div>
                     </div>
                     </div>

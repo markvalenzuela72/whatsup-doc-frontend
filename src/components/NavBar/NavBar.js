@@ -23,7 +23,7 @@ class NavBar extends Component {
         window.location.href = "/";
     }
     render() {
-        const myAccountDropDown = <li><NavLink to="">My Account<i className="material-icons right">arrow_drop_down</i></NavLink></li>
+        const myAccountDropDown = <li><NavLink to=''>My Account<i className="material-icons right">arrow_drop_down</i></NavLink></li>
         const dropdownOption = {
             coverTrigger: false,
             alignment: 'right' // Displays dropdown with edge aligned to the left of button
@@ -38,7 +38,7 @@ class NavBar extends Component {
                     <li><NavLink to="/contactus">Contact Us</NavLink></li>
                     <Dropdown options={dropdownOption} trigger={myAccountDropDown} className="collection">
                         <div className="collection-item avatar">
-                            <img src="http://materializecss.com/images/yuna.jpg" alt="" className="circle" />
+                            <img src="https://images-na.ssl-images-amazon.com/images/I/618AgkLAUdL._SY355_.jpg" alt="" className="circle" />
                             <span className="title">Sign in as</span>
                             <p>{full_name}</p>
                         </div>
@@ -64,7 +64,7 @@ class NavBar extends Component {
                     <li><NavLink to="/contactus">Contact Us</NavLink></li>
                     <Dropdown options={dropdownOption} trigger={myAccountDropDown} className="collection">
                         <div className="collection-item avatar">
-                            <img src="http://materializecss.com/images/yuna.jpg" alt="" className="circle" />
+                            <img src="https://images-na.ssl-images-amazon.com/images/I/618AgkLAUdL._SY355_.jpg" alt="" className="circle" />
                             <span className="title">Sign in as</span>
                             <p>{full_name}</p>
                         </div>
