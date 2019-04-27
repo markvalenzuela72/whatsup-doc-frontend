@@ -22,7 +22,7 @@ const Loading = (props) => {
 }
 const DashboardContainer = (props) => {
   return <div className="container">
-    <div className="row">
+    <div className="row" id="dashboardbox">
       <div className="col-md-4 mt-3" id="dash-info">
         <div id="dash-title">
           <h2> Dashboard </h2>
