@@ -42,6 +42,7 @@ class NavBar extends Component {
                             <span className="title">Sign in as</span>
                             <p>{full_name}</p>
                         </div>
+                        <NavLink to="/dashboard"> Dashboard </NavLink>
                         <NavLink to="/" onClick={this.logout}>Logout</NavLink>
                     </Dropdown>
                 </ul>
