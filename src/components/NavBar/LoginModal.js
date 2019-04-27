@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Modal, TextInput, Button } from 'react-materialize';
 import { loginRequest } from '../../helpers/network';
-import { saveUser, isRegistered } from '../../helpers/authentication';
+import { saveUser } from '../../helpers/authentication';
 import M from 'materialize-css';
 class LoginModal extends Component {
     state = {
@@ -69,7 +69,6 @@ class LoginModal extends Component {
                                 <Link to="/">Forgot Password?</Link>
                             </div>
                         </div>
-                        {!isRegistered() ?
                             <div>
                                 <div className="row">
                                     <div className="col s12 center-align">
@@ -84,7 +83,6 @@ class LoginModal extends Component {
                                     </div>
                                 </div>
                             </div>
-                            : null}
                     </form>
                 </div>
             </Modal>
