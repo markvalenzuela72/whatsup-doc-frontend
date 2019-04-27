@@ -1,6 +1,5 @@
 #aboutsection {  
     color:black;
-    height: 83vh;
 }
 
 #aboutsection .row {
@@ -10,3 +9,17 @@
     margin-top: 50px;
 }
 
+@media (max-width: 996px) {
+    #aboutsection .row {
+      margin-top: 80px;
+    }
+
+    #aboutsection h1 {
+      font-size: 2em;
+    }
+
+    #aboutsection h2{
+      font-size: 2em;
+    }
+
+  }

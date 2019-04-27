@@ -2,7 +2,6 @@
 #dash-menu {
   background: #ddd;
   color: #333;
-  
 }
 
 #dash-menu li{
@@ -16,10 +15,12 @@
 #dash-menu a{
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+  margin-left: 60px;
 }
 
 #dash-menu a:hover {
   color: white;
+  text-decoration: none;
   
 }
 

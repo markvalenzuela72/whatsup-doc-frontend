@@ -19,9 +19,9 @@ class Home extends Component {
             <h2 className="mx-auto mt-2 mb-5 text-secondary" id="subheadertext">Medical information you can trust.</h2>
 
         <div id="homeMenu">
-        <a className="homeOptions" href="#"><img src=         {pharmacydir} alt="pharmacy-dictionary" /> </a> 
-            <a className="homeOptions" href="#"><img src={generalhealth} alt="general-health" /></a>
-            <a className="homeOptions" href="#"><img src={physiciandir} alt="physician-directory" /></a>
+        <a className="homeOptions" href><img src={pharmacydir} alt="pharmacy-dictionary" /> </a> 
+            <a className="homeOptions" href><img src={generalhealth} alt="general-health" /></a>
+            <a className="homeOptions" href><img src={physiciandir} alt="physician-directory" /></a>
         </div>
         </div>
 

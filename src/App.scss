@@ -7,7 +7,6 @@ input:not([type]):focus:not([readonly]), input[type="text"]:not(.browser-default
   border-bottom: 1px solid $primary-color;
 }
 
-
 .collection .collection-item.avatar{
   min-height: 44px;
 }
@@ -20,8 +19,22 @@ nav .brand-logo{
   padding-top: 5px;
 }
 
-.page-footer{
-  padding-top: 0;
+nav .brand-logo img{
+  width: 300px;
+  padding-bottom: 15px;
+  margin-left: 30px;
+}
+
+.page-footer {
+  padding: 15px 0px;
+  color: rgba(255, 255, 255, 0.8);
+  position: fixed;
+  background-color: #41a6c2;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
 }
 
 nav .waves-effect.btn {
@@ -41,6 +54,31 @@ nav .dropdown-content {
   white-space: nowrap;
   z-index: 1;
   will-change: width, height;
+}
+
+nav ul a:hover{
+  text-decoration: none;
+  color: black;
+}
+
+.sidenav li > a {
+  font-size: 14px;
+  font-weight: 500;
+  height: 48px;
+  line-height: 48px;
+  padding: 0 50px;
+  color: #41a6c2;
+  text-align: center;
+  font-size: 1.6em;
+  margin: 20px;
+}
+
+.sidenav li > a:hover{
+  text-decoration: none;
+}
+
+.sidenav li > a.btn, .sidenav li > a.btn-large, .sidenav li > a.btn-small, .sidenav li > a.btn-large, .sidenav li > a.btn-floating {
+  color:black;
 }
 
 .dropdown-content.collection .collection-item:last-child {
@@ -71,7 +109,7 @@ nav .dropdown-content {
     display: -ms-flexbox;
     /* height: 35rem !important; */
     // min-height: 55rem;
-    height: 80vh; 
+    height: 83vh; 
     overflow: hidden;
     position: relative;
     text-align: center;
@@ -81,6 +119,7 @@ nav .dropdown-content {
 
 #headertext{
   color: #41A6C2;
+  font-weight: bold;
 }
 
 #homeMenu img{
@@ -144,9 +183,14 @@ nav .dropdown-content {
 }
 
 @media (max-width: 996px) {
+  #Home{
+    height: 80vh;
+  }
+
   #homeMenu img {
     width: 200px;
     height: 200px;
+    display: grid;
   }
 }
 
